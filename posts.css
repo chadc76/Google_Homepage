@@ -1,0 +1,64 @@
+html, body, section, header, div, img, nav, ul, li, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-content {
+  box-sizing: border-box;
+  margin: 50px auto;
+  width: 500px;
+  border: 10px solid lightgray;
+  font-family: sans-serif;
+}
+
+.section {
+  border-bottom: 10px solid lightgray;
+}
+
+.header-content {
+  padding: 20px;
+  display: flex;
+  border-bottom: 2px solid lightgray;
+}
+
+.header-img-container {
+  width: 50px;
+  border: 2px solid blue;
+  margin-right: 20px;
+}
+
+.header-info-container {
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+}
+
+.header-info-container li:first-of-type {
+  color: blue;
+}
+
+.post-container {
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
