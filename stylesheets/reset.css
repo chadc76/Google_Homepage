@@ -1,4 +1,4 @@
-html, body, section, header, footer, div, img, nav, ul, li, p, h1, h2, a, span, button, small, i, input {
+html, body, section, header, head, footer, div, img, nav, ul, ol, li, p, h1, h2, h3, a, span, button, small, i, input {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,4 +24,8 @@ img {
 
 button {
 cursor: pointer;
+}
+
+ol {
+  padding-left: 10px;
 }
