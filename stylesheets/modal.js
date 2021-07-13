@@ -1,17 +1,32 @@
-/* global $ */
 
-const toggleModal = () => {
-	$("#search-modal").toggleClass('expand')
-	$("#overlay").toggleClass('hidden')
-};
+function dropdownFunction() {
+  document.getElementById("dropdown").classList.toggle("expand");
+  document.getElementById("triangle").classList.toggle("expand");
+}
 
-// Add click listener to search icon which invokes sidebar function
-$(() => $('#search-modal-btn').on('click', toggleModal));
+function searchFunction() {
+  document.getElementById("search-modal").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+  document.getElementById("header-links").classList.toggle("hidden");
+}
 
-// Add click listener to overlay
-$(() => $('#overlay').on('click', toggleModal));
+function closeFunction() {
+  document.getElementById("search-modal").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+  document.getElementById("header-links").classList.toggle("hidden");
+}
 
-// Add click listener to close button
-$(() => $('.close').on('click', toggleModal));
 
-
+// Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.shopping-bag-btn')) {
+    // var dropdowns = document.getElementsByClassName("dropdown");
+    // var i;
+    // for (i = 0; i < dropdowns.length; i++) {
+    //   var openDropdown = dropdowns[i];
+    //   if (openDropdown.classList.contains('expand')) {
+    //     openDropdown.classList.remove('expand');
+    //   }
+//     }
+//   }
+// }

@@ -11,7 +11,7 @@
   <body>
 
     <header class="main-nav">
-      <ul class="header-links">
+      <ul class="header-links" id="header-links">
         <li>
           <a href="#"><i class="fab fa-apple"></i></a>
         </li>
@@ -23,62 +23,46 @@
         <li><a href="#">Music</a></li>
         <li><a href="#">Support</a></li>
         <li>
-          <button><i class="fas fa-search"></i></button>
-          <section id="search-modal" class="search-modal hidden">
-            <section class="input-wrapper">
-              <i class="fas fa-search"></i>
-              <input type="search" placeholder="Search apple.com">
-              <button class="close">X</button>
-            </section>
-          </section>
+          <button class="seatch-modal-btn" onclick="searchFunction()"><i class="fas fa-search"></i></button>
         </li>
         <li>
-          <button><i class="fas fa-shopping-bag"></i></button>
-          <ul class="dropdown">
-            <li>Your Bag is empty</li>
-            <li>
-              <button>
-                <ul class="dropdown-list-items">
-                  <li><i class="fas fa-shopping-bag"></i></li>
-                  <li>Bag</li>
-                </ul>
-              </button>
-            </li>
-            <li>
-              <button>
-                <ul class="dropdown-list-items">
-                  <li><i class="far fa-heart"></i></li>
-                  <li>Favorites</li>
-                </ul>
-              </button>
-            </li>
-            <li>
-              <button>
-                <ul class="dropdown-list-items">
-                  <li><i class="fas fa-box"></i></li>
-                  <li>Orders</li>
-                </ul>
-              </button>
-            </li>
-            <li>
-              <button>
-                <ul class="dropdown-list-items">
-                  <li><i class="fas fa-cog"></i></li>
-                  <li>Account</li>
-                </ul>
-              </button>
-            </li>
-            <li>
-              <button>
-                <ul class="dropdown-list-items">
-                  <li><i class="fas fa-user-circle"></i></li>
-                  <li>Sign in</li>
-                </ul>
-              </button>
-            </li>
-          </ul>
+          <button class="shopping-bag-btn" onclick="dropdownFunction()"><i class="fas fa-shopping-bag"></i></button>
+          <div class="dropdown" id="dropdown">
+            <div class="triangle" id="triangle"></div>
+            <div>
+              <div class="empty">
+                Your Bag is empty
+              </div>
+            </div>
+            <button class="dropdown-list-items">
+              <div><i class="fas fa-shopping-bag"></i></div>
+              <div>Bag</div>
+            </button>
+            <button class="dropdown-list-items">
+              <div><i class="far fa-heart"></i></div>
+              <div>Favorites</div>
+            </button>
+            <button class="dropdown-list-items">
+              <div><i class="fas fa-box"></i></div>
+              <div>Orders</div>
+            </button>
+            <button class="dropdown-list-items">
+              <div><i class="fas fa-cog"></i></div>
+              <div>Account</div>
+            </button>
+            <button class="dropdown-list-items">
+              <div><i class="fas fa-user-circle"></i></div>
+              <div>Sign in</div>
+            </button>
         </li>
       </ul>
+      <section id="search-modal" class="search-modal">
+        <section class="input-wrapper">
+          <i class="fas fa-search"></i>
+          <input type="search" placeholder="Search apple.com">
+          <button onclick="closeFunction()"class="close">X</button>
+        </section>
+      </section>
     </header>
 
     <section class="page-nav-fixed">
@@ -1099,6 +1083,6 @@
       </section>
     </footer>
 
-    <section id="overlay" class="overlay hidden"></section>
+    <section id="overlay" class="overlay"></section>
   </body>
 </html>

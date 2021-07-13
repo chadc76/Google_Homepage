@@ -29,3 +29,19 @@ cursor: pointer;
 ol {
   padding-left: 10px;
 }
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+input[type="search"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
